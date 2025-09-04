@@ -11,7 +11,7 @@ CHOOSE_PLATFORM, CHOOSE_ITEM, ENTER_AMOUNT, UPLOAD_PROOF = range(4)
 # /start
 def start(update, context):
     try:
-        with open(r"C:\Users\alper\OneDrive\Desktop\PEY 2\IT\Telegram\assets\Service.gif", "rb") as gif_file:
+        with open(r"assets\Service.gif", "rb") as gif_file:
             update.message.reply_animation(
                 animation=gif_file,
                 caption="🚀 Welcome to *Pey2 Panel Bot*! Boost your social media fast and easy!",
@@ -19,7 +19,7 @@ def start(update, context):
             )
     except Exception as e:
         # Fallback Bild
-        with open(r"C:\Users\alper\OneDrive\Desktop\PEY 2\IT\Telegram\assets\BaclOnWhite.png", "rb") as img_file:
+        with open(r"assets\BlackOnWhite.png", "rb") as img_file:
             update.message.reply_photo(
                 photo=img_file,
                 caption="🚀 Welcome to *Pey2 Panel Bot*! Boost your social media fast and easy!",
@@ -244,3 +244,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
